@@ -1,0 +1,38 @@
+.hamburger
+  position: absolute
+  top: 30px
+  left: 20px
+  z-index: 11
+  display: none
+  height: 3px
+  $this: &
+
+  &.is-active
+    #{$this}__line
+      &:first-child
+        top: 0
+
+      &:last-child
+        bottom: 0
+
+  @media (max-width: $sm)
+    display: block
+
+  &__line
+    position: absolute
+    width: 40px
+    height: 3px
+    border-radius: 3px
+    background-color: $c-green
+    display: block
+
+    &:first-child
+      transition: top 0.3s ease-in-out
+      top: -10px
+
+    &:nth-child(2)
+      top: 0
+
+    &:last-child
+      transition: bottom 0.3s ease-in-out
+      bottom: -10px

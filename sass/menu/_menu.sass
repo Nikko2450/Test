@@ -1,0 +1,33 @@
+.menu
+
+  &__item
+    &:not(:last-of-type)
+      margin-bottom: 4px
+
+  &__link
+    padding: 8px 12px
+    display: flex
+    background-color: $c-white
+    border-radius: 6px
+    transition: background .3s ease
+
+    &:hover
+      background: $c-green-2
+
+      img
+        filter: invert(0%) sepia(4%) saturate(1068%) hue-rotate(341deg) brightness(96%) contrast(79%)
+
+  &__text
+    font-size: 16px
+    line-height: 24px
+    font-family: Inter
+    font-weight: 600
+    color: $c-black
+    margin-left: 10px
+
+  img
+    transition: filter .3s ease
+    filter: invert(45%) sepia(8%) saturate(934%) hue-rotate(183deg) brightness(94%) contrast(94%)
+
+
+      

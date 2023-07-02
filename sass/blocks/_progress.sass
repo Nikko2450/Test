@@ -1,0 +1,81 @@
+.progress
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  gap: 144px
+
+  $this: &
+
+  @media (max-width: $md)
+    gap: 45px
+
+  @media (max-width: $sm)
+    gap: 15px 90px
+
+  @media (max-width: $xs)
+    gap: 15px 30px
+    justify-content: center
+
+  &__state
+    display: flex
+    align-items: center
+    flex-direction: column
+    position: relative
+
+    &::before
+      content: ""
+      position: absolute
+      background-image: url("../img/line.svg")
+      width: 150%
+      height: 2px
+      top: 50%
+      right: -144px
+      transform: translateY(calc(50% - 20px))
+      filter: invert(43%) sepia(26%) saturate(2551%) hue-rotate(163deg) brightness(104%) contrast(105%)
+
+      @media (max-width: $md)
+        right: -45px
+        width: 100%
+
+      @media (max-width: $sm)
+        right: -90px
+
+      @media (max-width: $xs)
+        content: none
+
+  &__round
+    width: 72px
+    height: 72px
+    background-color: $c-green
+    border-radius: 50%
+    margin-bottom: 15px
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4)
+    position: relative
+    z-index: 1
+
+    @media (max-width: $sm)
+      width: 50px
+      height: 50px      
+
+  &__text
+    font-family: Inter
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+    color: $c-black
+
+  .state-2 
+    #{$this}__round
+      border: 1px solid $c-gray-700
+
+  .state-3, .state-4, .state-5
+    #{$this}__round
+      background-color: $c-gray-200
+
+  .state-3
+    &::before
+      filter: invert(93%) sepia(6%) saturate(1149%) hue-rotate(227deg) brightness(108%) contrast(88%)
+  
+  .state-4, .state-5
+    &::before
+      content: none

@@ -1,0 +1,87 @@
+.order
+  padding: 17px 20px 12px
+  background-color: $c-white
+  border-radius: 12px
+
+  &__title
+    color: $c-black
+    font-size: 20px
+    font-family: Inter
+    font-weight: 500
+    line-height: 27px
+    margin-bottom: 20px
+
+    @media (max-width: $xs)
+      text-align: center
+      
+
+  &__text
+    color: $c-gray-700
+    font-size: 12px
+    font-family: Inter
+    font-weight: 400
+    line-height: 24px
+    margin-bottom: 6px
+
+  &__select
+    width: 100%
+    padding: 8px 12px
+    background-color: $c-white-2
+    border-radius: 8px
+    border: 1px solid $c-gray-200
+    color: $c-gray-700
+    font-size: 16px
+    font-family: Inter
+    font-weight: 400
+    line-height: 24px
+
+  &__option
+    color: $c-gray-700
+    font-size: 16px
+    font-family: Inter
+    font-weight: 400
+    line-height: 24px
+
+  &__wrapper
+    position: relative
+    
+    &::after
+      content: ""
+      position: absolute
+      background-image: url("../img/chevron-down.svg")
+      width: 20px
+      height: 20px
+      background-repeat: no-repeat
+      right: 12px
+      bottom: 12px
+
+    &:not(:last-of-type)
+      margin-bottom: 18px
+
+    @media (max-width: $xs)
+      &::after
+        content: ""
+        right: 1px
+
+  &__select
+    appearance: none
+
+    &::-ms-expand 
+      display: none
+
+  &__button
+    display: block
+    margin-left: auto
+    margin-top: 52px
+    padding: 10px 16px
+    background-color: $c-green
+    border-radius: 8px
+    color: $c-white
+    transition: background .3s ease
+
+    &:hover
+      background-color: darken($c-green, 5%)
+
+    @media (max-width: $xs)
+      margin: 32px 0 0 auto
+      

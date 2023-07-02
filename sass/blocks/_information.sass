@@ -1,0 +1,89 @@
+.information
+  margin: 100px 0 50px
+  gap: 20px
+
+  @media (max-width: $md)
+    flex-wrap: wrap
+
+  @media (max-width: $sm)
+    margin: 50px 0
+
+  @media (max-width: $xs)
+    margin: 30px 0
+
+  &__card
+    width: 50%
+    background-color: $c-white
+    padding: 20px 23px 8px 20px
+
+    @media (max-width: $md)
+      width: 100%
+
+    @media (max-width: $sm)
+      padding: 15px 13px 8px 15px
+
+  &__truck
+    width: 50%
+    align-items: center
+    background-color: $c-white
+    padding: 23px 69px 34px 63px
+
+    @media (max-width: $lg)
+      padding: 25px 10px
+
+    @media (max-width: $md)
+      width: 100%
+
+    @media (max-width: $xs)
+      flex-wrap: wrap
+
+  &__title
+    font-family: Inter
+    font-weight: 500
+    font-size: 20px
+    line-height: 27px
+    margin-bottom: 20px
+
+  &__text
+    color: $c-black
+    font-size: 16px
+    font-family: Inter
+    font-weight: 500
+    line-height: 24px
+
+    @media (max-width: $xs)
+      font-size: 12px
+      
+
+  &__number
+    color: $c-gray-700
+    font-size: 16px
+    font-family: Inter
+    font-weight: 500
+    line-height: 24px
+
+  &__country
+    color: $c-gray-700
+    font-size: 16px
+    font-family: Inter
+    font-weight: 500
+    line-height: 24px
+
+  &__contacts
+    
+    &:not(:last-of-type)
+      margin-bottom: 12px
+
+  &__truck-title
+    color: $c-green
+    font-size: 24px
+    font-family: Inter
+    font-weight: 800
+    line-height: 32px
+
+  &__desc
+    color: $c-green
+    font-size: 14px
+    font-family: Inter
+    font-weight: 400
+    line-height: 24px

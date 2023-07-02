@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="layout flex">
+      <div class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <img src="/img/house.svg" alt="house" />
+              <span class="menu__text">Головна</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <img src="/img/graph.svg" alt="graph" />
+              <span class="menu__text">Сторінка1</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <img src="/img/stack.svg" alt="stack" />
+              <span class="menu__text">Сторінка2</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <img src="/img/check.svg" alt="check" />
+              <span class="menu__text">Сторінка3</span>
+            </a>
+          </li>
+        </ul>
+        <a href="" class="nav__settings">
+          <img src="/img/settings.svg" alt="setting" />
+          <span class="menu__text">Налаштування</span>
+        </a>
+      </nav>
+
+      <div class="section">
+        <h1 class="section__title">Start</h1>
+        <div class="section__wrapper">
+          <div class="progress">
+            <div class="progress__state state-1 text-center">
+              <div class="progress__round"></div>
+              <p class="progress__text">Стан1</p>
+            </div>
+            <div class="progress__state state-2 text-center">
+              <div class="progress__round"></div>
+              <p class="progress__text">Стан2</p>
+            </div>
+            <div class="progress__state state-3 text-center">
+              <div class="progress__round"></div>
+              <p class="progress__text">Стан3</p>
+            </div>
+            <div class="progress__state state-4 text-center">
+              <div class="progress__round"></div>
+              <p class="progress__text">Стан4</p>
+            </div>
+            <div class="progress__state state-5 text-center">
+              <div class="progress__round"></div>
+              <p class="progress__text">Стан5</p>
+            </div>
+          </div>
+
+          <div class="information flex">
+            <div class="information__card rounded-xl">
+              <h2 class="information__title">Information</h2>
+              <div class="information__contacts flex justify-between">
+                <p class="information__text">Info Number:</p>
+                <a class="information__number" href="tel:903049">903049</a>
+              </div>
+              <div class="information__contacts flex justify-between">
+                <p class="information__text">Pick up Place:</p>
+                <p class="information__country">Sweden</p>
+              </div>
+            </div>
+
+            <div class="information__truck rounded-xl flex justify-around">
+              <div class="information__truck-text text-center">
+                <p class="information__truck-title">We are here</p>
+                <p class="information__desc">Long time to go</p>
+              </div>
+              <img class="information__img" src="/img/truck.jpg" alt="truck" />
+            </div>
+          </div>
+
+          <form class="order">
+            <h2 class="order__title">Перезамовте Багаж</h2>
+            <div class="order__wrapper">
+              <p class="order__text">Дропдаун</p>
+              <select class="order__select">
+                <option hidden disabled selected value>Select option</option>
+                <option class="order__option" value="option1">Option1</option>
+                <option class="order__option" value="option2">Option2</option>
+                <option class="order__option" value="option3">Option3</option>
+              </select>
+            </div>
+
+            <div class="order__wrapper">
+              <p class="order__text">Дропдаун</p>
+              <select class="order__select">
+                <option hidden disabled selected value>Select option</option>
+                <option class="order__option" value="option1">Option1</option>
+                <option class="order__option" value="option2">Option2</option>
+                <option class="order__option" value="option3">Option3</option>
+              </select>
+            </div>
+            <button class="order__button">Done</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
